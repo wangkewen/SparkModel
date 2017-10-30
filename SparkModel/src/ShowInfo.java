@@ -224,7 +224,8 @@ public static void main(String[] args){
 	    start = rd.nextInt(maxstart/2-maxstart/10)+maxstart/10+1;
 		fixstart.add(start*100l);
 	}
-	JobPredict jp = new JobPredict("",1l);
+	String logfile="";
+	JobPredict jp = new JobPredict(logfile,1l);
 	List<JobResource> jobresources = new ArrayList<JobResource>();
 	List<JobProfile> jobprofileslist = new ArrayList<JobProfile>();
 	List<Long> inputdatasizes = new ArrayList<Long>();
